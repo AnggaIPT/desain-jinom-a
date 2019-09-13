@@ -3,6 +3,8 @@ html{scroll-behavior: smooth; overflow-x: hidden;}
     padding: 0;
     margin: 0;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .navbar{
     position: relative;
@@ -13,11 +15,16 @@ html{scroll-behavior: smooth; overflow-x: hidden;}
 }
 
 .jumbotron{
-    background-image: url(../images/bg-1.jpg);
     background-size: cover;
-    height: 640px;
+    height: 670px;
     text-align: center;
     position: relative;
+}
+.jumbo-a{
+    background-image: url(../images/bg-1.jpg);
+}
+.jumbo-b{
+    background-image: url(../images/kegiatan5.png);
 }
 .jumbotron .container {
     z-index: 6;
@@ -111,6 +118,24 @@ html{scroll-behavior: smooth; overflow-x: hidden;}
 .card-color-4{
     background-color: #F9B03E;
 }
+.color-1{
+    color: #0682BC;
+}
+.color-2{
+    color: #F9B03E;
+}
+.color-3{
+    color: #EA553A;
+}
+.color-4{
+    color: #36404C;
+}
+.color-5{
+    color: rgb(119, 123, 128);
+}
+.color-6{
+    color: #82B440;
+}
 .hr-title{
     background-color: #F9B03E;
     border: 2px solid #F9B03E;
@@ -188,16 +213,66 @@ html{scroll-behavior: smooth; overflow-x: hidden;}
     color: #EA553A;
 } 
 
+.bg-content-testimoni {
+    margin: 60px auto;
+}
+.bg-content-testimoni .container {
+    width: 80%;
+}
 /* end hart image */
 
+.bg-testimoni{
+    margin: 0;
+    padding: 0;
+}
+.bg-map{
+    margin-bottom: 70px;
+    padding: 0;
+}
+.testimoni {
+    margin: 15px 4px;
+}
+/* bard testimoni */
+.testimoni .card { 
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    overflow: hidden;
+}
+.testimoni img {
+    width: 100%;
+    height: 50%;
+    image-orientation: inherit;
+}
+.testimoni a {
+    text-decoration: none;
+}
+.testimoni a:hover{
+    color: #EA553A;
+}
 
+.contact-us .list-group .list-group-item{
+    border: 0px solid transparent;
+}
+.copyR{
+    color: #ffffff;
+    margin: 10px 10px;
+}
+.copyR .fa-heart {
+    color: #EA553A;
+}
+.copyR .fa-code{
+    color: #F9B03E;
+}
 /* DESKTOP VERSION */
 @media (min-width: 992px){
     
     .nav-link{
         text-transform: uppercase;
     }
-
+    .testimoni {
+        margin: 15px 15px;
+    }
     .nav-link:hover::after{
         content: '';
         display: block;
